@@ -11,7 +11,7 @@ local mine = false
 local function start(angle,amount)
 	if not amount then amount = 1 end
 	os.setComputerLabel("Laser Turtle - MINING")
-	--if not angle then angle = 90 end
+	if not angle then angle = 90 end
 	while mine do
 		for i=1,amount do
 			l.fire(0,angle,5)
